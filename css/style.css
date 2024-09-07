@@ -1,0 +1,90 @@
+.wrapper {
+	width: 70%;
+	color: white;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.row__item {
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	align-content: center;
+}
+
+.row__empty,
+.row__number {
+	width: 20px;
+}
+
+.row__empty,
+.row__letter {
+	height: 20px;
+}
+
+.row:nth-child(odd) .row__item:nth-child(odd),
+.row:nth-child(even) .row__item:nth-child(even) {
+	background-color: #eee9e6;
+}
+
+.row:nth-child(even) .row__item:nth-child(odd),
+.row:nth-child(odd) .row__item:nth-child(even) {
+	background-color: #b2a99f;
+}
+
+.row:last-child .row__item.row__number,
+.row:last-child .row__item.row__letter,
+.row:last-child .row__item.row__empty,
+.row:first-child .row__item.row__number,
+.row:first-child .row__item.row__letter,
+.row:first-child .row__item.row__empty {
+	background-color: #82746a;
+}
+
+.chess-piece {
+	width: 75px;
+	height: 75px;
+	background-image: url("../images/chess/Chess_Pieces_Sprite.svg");
+	background-size: 450px 150px;
+}
+
+.white-king {
+	background-position: 0 0;
+}
+.white-queen {
+	background-position: -75px 0;
+}
+.white-rook {
+	background-position: -150px 0;
+}
+.white-bishop {
+	background-position: -300px 0;
+}
+.white-knight {
+	background-position: -225px 0;
+}
+.white-pawn {
+	background-position: -375px 0;
+}
+
+.black-king {
+	background-position: 0 -75px;
+}
+.black-queen {
+	background-position: -75px -75px;
+}
+.black-rook {
+	background-position: -150px -75px;
+}
+.black-bishop {
+	background-position: -300px -75px;
+}
+.black-knight {
+	background-position: -225px -75px;
+}
+.black-pawn {
+	background-position: -375px -75px;
+}
